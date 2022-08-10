@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
+
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,28 +12,49 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-     <!-- stylesheet -->
-     <link rel="stylesheet" href="style.css" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css" />
     <title>Digital Marketing Homepage</title>
   </head>
   <body>
     <div class="container">
       <section aria-label="navbar">
         <nav class="navbar-container">
-          <div>
-            <img src="./assets/Logo.png" alt="brand-logo" />
-          </div>
-          <div class="grow-list">
-            <ul class="list">
-              <li class="list-item">Home</li>
-              <li class="list-item">About</li>
-              <li class="list-item">Services</li>
-              <li class="list-item">Portfolio</li>
-              <li class="list-item">Pricing</li>
-            </ul>
+          <div class="navbar-right">
+            <div>
+              <img src="./assets/Logo.png" alt="brand-logo" />
+            </div>
+            <div class="grow-list">
+              <ul class="list">
+                <li class="list-item">Home</li>
+                <li class="list-item">About</li>
+                <li class="list-item">Services</li>
+                <li class="list-item">Portfolio</li>
+                <li class="list-item">Pricing</li>
+              </ul>
+            </div>
           </div>
           <div class="button-group">
             <button class="nav-button">Contact Us</button>
+          </div>
+          <div class="ham">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-menu-2"
+              width="44"
+              height="44"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#5955B3"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <line x1="4" y1="6" x2="20" y2="6" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
           </div>
         </nav>
       </section>
@@ -53,7 +74,7 @@
           </div>
           <!-- Right Text -->
           <div>
-            <img src="./assets/Header Illustration.png" alt="illustration" />
+            <img class="main-img" src="./assets/Header Illustration.png" alt="illustration" />
           </div>
         </div>
       </section>

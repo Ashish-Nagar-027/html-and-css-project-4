@@ -28,12 +28,14 @@ li {
     position: relative;
     display: flex;
     align-items: center;
-    margin: 3rem -8rem 2rem 9rem;
+    margin: 3rem 0rem 2rem 3rem;
+    justify-content: space-between;
 }
 
 nav div img {
     width: 7rem;
     cursor: pointer;
+  
 }
 
 .list {
@@ -53,9 +55,6 @@ nav div img {
     color: black ; 
 }
 
-.button-group {
-    margin-left: 22rem;
-}
 
 .nav-button {
     margin-right: 4rem;
@@ -75,20 +74,20 @@ nav div img {
 
 .banner-container {
     display: flex;
-    margin: 3rem 0rem 3rem 6rem;
+    margin: 3rem 0rem 3rem 0rem;
 }
 
 .banner-container div:first-child {
     margin-left: 3rem;
-
 }
-
 
 .heading-text {
     padding-top: 6rem;
     font-size: 3.5rem;
     padding-right: 5rem;
     color: var(--clr-primary);
+    width: 30vw;
+    height: max-content;
 }
 
 .heading-text span {
@@ -105,3 +104,98 @@ nav div img {
     padding: 1.5rem 2.5rem;
 }
 
+.ham {
+    display: none;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.main-img{
+    width: 100%;
+    aspect-ratio: inherit;
+}
+
+@media only screen and (max-width: 1000px) {
+    .button-group {
+        display: none;
+    }
+    .grow-list {
+        display: none;
+    }
+    .ham {
+        display: flex;
+        margin-right:5vw;
+    }
+
+    .heading-text {
+        padding-top: 3rem;
+        font-size: 2.5rem;
+    }
+    .btn {
+        margin-top: 3rem;
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .banner-container {
+        margin-top: 0;
+        flex-direction: column-reverse;
+    }
+    
+    .banner-container div :first-child {
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+    }
+    .main-img {
+        width: 50%;
+        display: block;
+        margin: auto;
+    }
+    .heading-text {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        margin-top:2rem
+    }
+    .description {
+        font-size: 1rem;
+    }
+
+    .btn {
+        display: block;
+        margin:auto;
+        margin-top: 3vh;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .heading-text {
+        font-size: 1.5rem;
+    }
+    .description {
+        font-size: 0.8rem;
+    }
+    .btn {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .heading-text {
+        font-size: 1rem;
+    }
+    .description {
+        font-size: 0.6rem;
+    }
+    .btn {
+        font-size: 0.6rem;
+    }
+}
